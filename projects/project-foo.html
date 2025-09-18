@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Macro-TWONy — Fabio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <header class="max-w-3xl mx-auto px-4 py-6 flex items-center justify-between">
+    <a href="/" class="text-xl font-semibold">Fabio</a>
+    <nav class="space-x-4">
+      <a class="text-brand hover:underline" href="/projects/">Projects</a>
+      <a class="text-brand hover:underline" href="/">Home</a>
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 pb-20 prose prose-invert prose-slate">
+    <h1>Macro-TWONy</h1>
+    <p><em>Behavioral polarization &amp; homophily impacting non-pharmaceutical interventions.</em></p>
+    <h2>What it is</h2>
+    <p>A simulation environment exploring how polarized behavior clusters shape epidemic outcomes under different NPIs.</p>
+    <h2>Demo (coming soon)</h2>
+    <p>This page will later embed a small interactive visualizer. For now it’s a static stub.</p>
+    <h2>Links</h2>
+    <ul>
+      <li><a href="#">Paper (preprint)</a> — placeholder</li>
+      <li><a href="#">Code</a> — placeholder</li>
+    </ul>
+  </main>
+
+  <footer class="max-w-3xl mx-auto px-4 py-10 border-t border-slate-800 text-sm text-slate-400">
+    © <span id="year"></span> Fabio
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

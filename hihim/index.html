@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HiHim — Fabio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <header class="max-w-3xl mx-auto px-4 py-6 flex items-center justify-between">
+    <a href="/" class="text-xl font-semibold">Fabio</a>
+    <nav class="space-x-4">
+      <a class="text-brand hover:underline" href="/">Home</a>
+      <!-- intentionally no public link here -->
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 pb-20">
+    <h1 class="text-2xl font-bold mb-6">HiHim</h1>
+    <ul class="grid gap-4">
+      <li class="border border-slate-800 rounded-2xl p-4 hover:bg-slate-900/60 transition">
+        <a class="block" href="/hihim/date-me-doc.html">Date-me Doc</a>
+      </li>
+      <li class="border border-slate-800 rounded-2xl p-4 hover:bg-slate-900/60 transition">
+        <a class="block" href="/hihim/urbex.html">Urbex Gallery</a>
+      </li>
+    </ul>
+    <p class="text-slate-500 mt-6 text-sm">This area is unlisted. Only people with the link should be able to find it.</p>
+  </main>
+
+  <footer class="max-w-3xl mx-auto px-4 py-10 border-t border-slate-800 text-sm text-slate-400">
+    © <span id="year"></span> Fabio
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

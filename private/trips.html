@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trips — Fabio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <header class="max-w-3xl mx-auto px-4 py-6 flex items-center justify-between">
+    <a href="/private/" class="text-xl font-semibold">← Private</a>
+    <nav class="space-x-4">
+      <a class="text-brand hover:underline" href="/">Home</a>
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 pb-20 prose prose-invert prose-slate">
+    <h1>Trips</h1>
+    <p>Add trip notes, itineraries, or photo links here.</p>
+  </main>
+
+  <footer class="max-w-3xl mx-auto px-4 py-10 border-t border-slate-800 text-sm text-slate-400">
+    © <span id="year"></span> Fabio
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" x-data="{ open:false, src:'' }">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Urbex Gallery — Fabio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <header class="max-w-3xl mx-auto px-4 py-6 flex items-center justify-between">
+    <a href="/hihim/" class="text-xl font-semibold">← HiHim</a>
+    <nav class="space-x-4">
+      <a class="text-brand hover:underline" href="/">Home</a>
+    </nav>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 pb-20">
+    <h1 class="text-2xl font-bold mb-6">Urbex Gallery</h1>
+    <p class="text-slate-300 mb-4">Drop your JPGs into <code>/assets/urbex/</code> and add new <code>&lt;img&gt;</code> tiles below.</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+      <!-- Example tiles. Replace src with your real images. Duplicate as needed. -->
+      <!-- <img @click="open=true; src=$el.src" class="w-full h-40 object-cover rounded-xl cursor-zoom-in" loading="lazy" src="/assets/urbex/photo-001.jpg" alt="Urbex 001"> -->
+      <!-- <img @click="open=true; src=$el.src" class="w-full h-40 object-cover rounded-xl cursor-zoom-in" loading="lazy" src="/assets/urbex/photo-002.jpg" alt="Urbex 002"> -->
+    </div>
+
+    <div x-show="open" x-transition class="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4" @keydown.escape.window="open=false">
+      <img :src="src" class="max-h-[85vh] max-w-[90vw] rounded-xl shadow-2xl" alt="preview">
+      <button @click="open=false" class="absolute top-4 right-4 bg-white/90 text-black px-3 py-1 rounded-lg text-sm">Close</button>
+    </div>
+  </main>
+
+  <footer class="max-w-3xl mx-auto px-4 py-10 border-t border-slate-800 text-sm text-slate-400">
+    © <span id="year"></span> Fabio
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
