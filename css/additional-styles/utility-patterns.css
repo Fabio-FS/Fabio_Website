@@ -1,46 +1,15 @@
-/* Typography */
-.h1 {
-    @apply text-4xl font-[650];
-}
-
-.h2 {
-    @apply text-2xl font-[650];
-}
-
-.h3 {
-    @apply text-xl font-[650];
-}
-
-.h4 {
-    @apply text-lg font-[650];
-}
-
-@media (width >= theme(--breakpoint-md)) {
-    .h1 {
-        @apply text-5xl;
-    }
-
-    .h2 {
-        @apply text-3xl;
-    }
-
-    .h3 {
-        @apply text-2xl;
-    }    
-}
-
 /* Buttons */
 .btn,
 .btn-sm {
-    @apply text-sm font-medium inline-flex items-center justify-center rounded-full leading-5 whitespace-nowrap transition duration-150 ease-in-out;
+    @apply text-sm font-medium inline-flex items-center justify-center rounded-lg whitespace-nowrap transition-all;
 }
 
 .btn {
-    @apply px-4 py-2;
+    @apply px-4 py-[11px] shadow-lg;
 }
 
 .btn-sm {
-    @apply px-4 py-1.5;
+    @apply px-3 py-[5px] shadow-sm;
 }
 
 /* Forms */
@@ -57,19 +26,19 @@ input[type="search"]::-webkit-search-results-decoration {
 .form-select,
 .form-checkbox,
 .form-radio {
-    @apply bg-gray-100 border border-gray-100 focus:border-sky-500 dark:bg-gray-700 dark:border-gray-700 focus:ring-0 focus:ring-offset-0;
+    @apply border border-gray-200 shadow-xs rounded-lg focus:ring-0 focus:ring-offset-0;
 }
 
 .form-input,
 .form-textarea,
 .form-multiselect,
 .form-select {
-    @apply text-sm px-3 py-2 rounded-full dark:focus:border-sky-500;
+    @apply bg-white text-sm py-2.5 px-4 focus:border-blue-300;
 }
 
 .form-input,
 .form-textarea {
-    @apply placeholder-gray-400 dark:placeholder-gray-500;
+    @apply placeholder-gray-400;
 }
 
 .form-select {
@@ -78,21 +47,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .form-checkbox,
 .form-radio {
-    @apply text-sky-500 checked:bg-sky-600 checked:border-transparent dark:focus-visible:not-checked:border-sky-500;
+    @apply text-gray-800 checked:bg-blue-500 checked:border-transparent focus-visible:not-checked:border-blue-300;
 }
 
 .form-checkbox {
     @apply rounded-xs;
-}
-
-/* Chrome, Safari and Opera */
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
-}
-
-.no-scrollbar {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
 }

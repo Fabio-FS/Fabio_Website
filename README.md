@@ -1,4 +1,4 @@
-# DevFolio HTML
+# Simple HTML
 
 HTML landing page template designed by Cruip.
 
