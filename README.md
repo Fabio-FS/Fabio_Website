@@ -1,37 +1,16 @@
-# Fabio — Personal Website (Dark) with Private and Unlisted Sections
+# DevFolio HTML
 
-This starter is a dark-themed static site using **Tailwind (CDN)** and **Alpine.js**.
-It includes a public site, a linked **/private/** section, and an unlisted **/hihim/** section (no password).
+HTML landing page template designed by Cruip.
 
-## Structure
+This HTML template is shipped with the (Tailwind CLI tool)[https://tailwindcss.com/docs/installation].
 
-```
-/
-  index.html
-  /projects/
-    index.html
-    project-foo.html
-  /private/          # linked from navbar (shared private content like trips, theater, urbex)
-    index.html
-    date-me-doc.html
-    urbex.html
-    trips.html
-    theater.html
-  /hihim/            # secret/unlisted (not linked anywhere)
-    index.html
-    date-me-doc.html
-    urbex.html
-  /assets/
-    /urbex/          # put your JPGs here
-  /demos/            # future interactive demos
-  netlify.toml
-```
+* [Getting started](#getting-started)
 
-## Notes
+## Getting started
 
-- There is **no password protection**; `/hihim/` is simply unlisted. If you want a password later, add a `_headers` file.
-- To change theme colors, edit Tailwind classes directly in HTML (e.g., `bg-slate-950`, `text-slate-100`).
+* First, ensure that node.js & npm are both installed. If not, choose your OS and installation method from [this page](https://nodejs.org/en/download/package-manager/) and follow the instructions.
+* Next, use your command line to enter your project directory.
+* This template comes with a ready-to-use package file called `package.json`. You just need to run `npm install` to install all of the dependencies into your project.
+* When `npm` has finished with the install, run `npm run build` to recompile the `style.css` file in the root directory.
 
-## Deploy
-
-Same steps as before: push to GitHub, then import the repo on Netlify.
+You're ready to go! The most useful task for rapid development is `npm run dev`, which rebuild the CSS every time you make a change in the HML or JS files.

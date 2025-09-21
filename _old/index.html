@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fabio — Research & Projects</title>
+  <meta name="description" content="Fabio — research on opinion dynamics, pandemics, and algorithmic effects on discourse." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: '#60a5fa' } // sky-400-ish
+        }
+      }
+    }
+  </script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌒</text></svg>">
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <header class="max-w-3xl mx-auto px-4 py-6 flex items-center justify-between">
+    <a href="/" class="text-xl font-semibold">Fabio</a>
+    <nav class="space-x-4">
+      <a class="text-brand hover:underline" href="/projects/">Projects</a>
+      <a class="text-brand hover:underline" href="/private/">Private</a>
+      <!-- No link to /hihim/ on purpose -->
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 pb-20">
+    <section class="mb-10">
+      <h1 class="text-3xl font-bold mb-3">Hi, I’m Fabio.</h1>
+      <p class="text-slate-300 leading-relaxed">
+        Physicist working on opinion dynamics, pandemics, and the algorithmic shaping of public discourse.
+        I build simulation models and simple demonstrators to stress-test ideas.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-xl font-semibold mb-3">Selected Projects</h2>
+      <ul class="grid gap-4">
+        <li class="border border-slate-800 rounded-2xl p-4 hover:bg-slate-900/60 transition">
+          <a class="block" href="/projects/project-foo.html">
+            <div class="font-semibold">Macro-TWONy</div>
+            <p class="text-sm text-slate-400">Behavioral polarization & homophily impacting NPIs in pandemics.</p>
+          </a>
+        </li>
+        <li class="border border-slate-800 rounded-2xl p-4 hover:bg-slate-900/60 transition">
+          <a class="block" href="/projects/">
+            <div class="font-semibold">More projects…</div>
+            <p class="text-sm text-slate-400">See all the things I’m tinkering with.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-xl font-semibold mb-3">Contact</h2>
+      <p class="text-slate-300">Email me at <span class="underline decoration-dotted">your.name@example.com</span>.</p>
+    </section>
+  </main>
+
+  <footer class="max-w-3xl mx-auto px-4 py-10 border-t border-slate-800 text-sm text-slate-400">
+    © <span id="year"></span> Fabio
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
